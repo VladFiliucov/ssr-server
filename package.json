@@ -4,6 +4,7 @@
   "description": "Server-Side-Rendering training",
   "main": "index.js",
   "scripts": {
+    "dev:build:server": "webpack --config webpack.server.js"
   },
   "author": "",
   "license": "ISC",
