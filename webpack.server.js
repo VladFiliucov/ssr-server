@@ -1,6 +1,8 @@
 const path = require('path');
+const merge = require('webpack-merge');
+const baseConfig = require('./webpack.base.js');
 
-module.exports = {
+const config = {
   target: 'node',
 
   entry: './src/index.js',
@@ -26,3 +28,6 @@ module.exports = {
     ]
   }
 };
+
+module.exports = merge(baseConfig, config);
+
