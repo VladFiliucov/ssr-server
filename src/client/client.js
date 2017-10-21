@@ -1,5 +1,12 @@
 import React from 'react';
 import { hydrate } from 'react-dom';
-import Home from './components/Home';
+import { BrowserRouter } from 'react-router-dom';
 
-hydrate(<Home />, document.getElementById('root'))
+import Routes from './Routes'
+
+hydrate(
+  <BrowserRouter>
+    <Routes />
+  </BrowserRouter>,
+  document.getElementById('root')
+)
